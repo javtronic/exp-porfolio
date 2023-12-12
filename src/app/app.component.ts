@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { InfoPaginaService } from './services/info-pagina.service';
+import { ProductosService } from './services/productos.service';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,6 @@ import { InfoPaginaService } from './services/info-pagina.service';
 export class AppComponent {
 
   private infoPaginaService = inject(InfoPaginaService);
+  private productosService = inject(ProductosService);
 
 }
